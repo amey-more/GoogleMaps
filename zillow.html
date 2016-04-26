@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title> Real-Estate Page</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=<API-KEY>"></script>
+	<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+	<script language="javascript" type="text/javascript" src="js/map.js"></script>
+	<script language="javascript" type="text/javascript" src="js/search.js"></script>
+	
+
+</head>
+
+
+<body>
+
+	<div id="control">
+		<h2>Find houses for Sale</h2>
+		<p>Locate houses for sale in your locality or in a particular zip code.</p>
+		<form method="get" id="chooseZipCode">
+			<button type="submit" class="searchButton">Use current location</button>
+			<button type="submit" id="searchZip" class="searchButton">Search by Zip Code</button>
+			<div class="clear"></div>
+			<div class="zipSearch">
+				<input id="textZip" type="text" name="zip" placeholder="Enter Zip Code" autofocus>
+				<button type="submit" class="learnButton">Search</button>
+			</div>
+			<div class="clear"></div>
+		</form>
+	</div>
+
+
+	<div id="map-canvas"></div>
+
+</body>
+
+</html>
